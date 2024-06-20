@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: #eaaa2b;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        div{
+            text-align: center;
+            
+        }
+        select,button{
+            margin-bottom: 20px;
+        }
+        button{
+            /* font-size: 25px; */
+            font-weight: bold;
+            border-radius: 10px;
+            border:#eaaa2b solid ;
+            padding:8px 10px;
+            color: rgb(231, 32, 32);
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div>
+        <h1>Please enter the temperature you'd like to convert</h1><br>
+        <input type="number" name="temp" id="temp">
+        <select name="cf" id="cf">
+            <option value="cel">Celcius</option>
+            <option value="fah">Fahrenheit</option>
+        </select><br>
+        <button   onclick="calTemp()">submit</button>
+        <br>
+        <span id="result"></span>
+    </div>
+    <script src="temperature_converter.js"></script>
+</body>
+</html>
